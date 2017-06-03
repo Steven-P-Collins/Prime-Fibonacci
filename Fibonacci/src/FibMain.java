@@ -12,7 +12,7 @@ public class FibMain {
 		double recursiveStartTime = System.nanoTime();
 		//System.out.println(F1.recursive(50));
 		System.out.println("It took " + F1.runTime(recursiveStartTime) 
-							+ " milliseconds to find the value recursively.\n");
+				   + " milliseconds to find the value recursively.\n");
 		
 		F1.primefib();
 		
