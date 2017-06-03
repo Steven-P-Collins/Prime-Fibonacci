@@ -10,7 +10,7 @@ public class FibMain {
 		F1.iterative(1000);
 		
 		double recursiveStartTime = System.nanoTime();
-		//System.out.println(F1.recursive(50));
+		System.out.println(F1.recursive(25));
 		System.out.println("It took " + F1.runTime(recursiveStartTime) 
 				   + " milliseconds to find the value recursively.\n");
 		
