@@ -41,25 +41,25 @@ public class Fib {
 	    	fibSequence();
 	    	if(x == 50|| x == 100 || x == 500 || x == 1000){
 	    		System.out.println("Position in fibonacci sequence: " + x
-	    							+ "\nThe value is: " + fib + "\n"
-	    							+ "The number is " + (fib.toString()).length() 
-	    							+ " digits long.");
+	    				   + "\nThe value is: " + fib + "\n"
+	    				   + "The number is " + (fib.toString()).length() 
+	    				   + " digits long.");
 	    		System.out.println("It took " + runTime(startTime) + " milliseconds to"
-	    							+ " reach the number iteratively.\n");
+	    				   + " reach the number iteratively.\n");
 	    	}
 	    	else if(fib.compareTo(test) > 0 && counter < 2){
 	    		System.out.println("The smallest fibonacci number greater than " + test
-	    							+ " is " + fib + ". It's the " + x 
-	    							+ " fibonacci number.\nIt took " 
-	    							+ runTime(startTime) + " milliseconds to find" 
-	    							+ " the number.\n");
+	    				   + " is " + fib + ". It's the " + x 
+	    				   + " fibonacci number.\nIt took " 
+	    				   + runTime(startTime) + " milliseconds to find" 
+	    				   + " the number.\n");
 	    		test = billion;//set test to 1 billion to check greater than billion
 	    		counter++;//counter used to stop statement from printing more than twice
 	    	}
 	    	/*else{
 	    		System.out.println("The fib value of " + x 
-	    							+ " it took " + runTime(startTime) 
-	    							+ " seconds to reach this number iteratively.");
+	    				+ " it took " + runTime(startTime) 
+	    				+ " seconds to reach this number iteratively.");
 	    	}*/
 	    }
 	    runTime(startTime);
@@ -87,8 +87,8 @@ public class Fib {
 	        	System.out.println(fib + " the fib numnber");
 	        	System.out.println(i + " position in fib sequence");
 	        	System.out.println("It took " + runTime(startTime) 
-	        						+ " milliseconds to find the " + ++primeCounter 
-	        						+ " prime in fib\n");
+	        			   + " milliseconds to find the " + ++primeCounter 
+	        			   + " prime in fib\n");
 	        }
 			j = three;
 	    }
@@ -103,14 +103,14 @@ public class Fib {
 			return false;
 		}
 		else{
-			fibDiv = fib.divide(two);
+			fibDiv = fib.divide(two);//Moved divide here to eliminate thousands of uneeded divides
 			while(result < 0){
 				if(fib.mod(j).equals(BigInteger.ZERO)){
 					return false;
 				}
 				j = j.add(two);
 				result = j.multiply(j).compareTo(fibDiv); //removed.divide(two) improved run time
-			}										   	  //of 12th prime by 8 seconds
+			}						  //of 12th prime by 8 seconds
 			result = -1;
 			return true;
 		}
