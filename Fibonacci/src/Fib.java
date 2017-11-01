@@ -15,8 +15,8 @@ public class Fib {
 
 	private void resetBigInt(){//method to reset values of
 		current = BigInteger.ZERO;
-	    previous = BigInteger.ONE;
-	    fib = BigInteger.ONE;
+		previous = BigInteger.ONE;
+		fib = BigInteger.ONE;
 	}
 	
 	public double runTime(double startTime){//converts nanoseconds to milliseconds
@@ -26,9 +26,9 @@ public class Fib {
 	
 	private void fibSequence(){//iteratively works fib numbers
 		//System.out.println(fib);//prints all fib numbers
-        current = fib.add(previous);
-        fib = previous;
-        previous = current;
+        	current = fib.add(previous);
+        	fib = previous;
+        	previous = current;
 	}
 	
 	public BigInteger iterative(int n){
@@ -90,7 +90,7 @@ public class Fib {
 	        			   + " milliseconds to find the " + ++primeCounter 
 	        			   + " prime in fib\n");
 	        }
-			j = three;
+		j = three;
 	    }
 	    return fib; 
 	}
